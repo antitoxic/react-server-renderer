@@ -1,0 +1,7 @@
+{
+    "name": "react-renderer",
+    "version": "1.0.0",
+    "dependencies": {
+        "zmq": "2.15.3"
+    }
+}
