@@ -125,8 +125,8 @@ def todo_controller(request, todo_id):
 ```
 
 Most likely you would want to break down the process of state building,
-so that things like `"_links"` which appear on every page are added outside
-your controller.
+so that things like `"_links"` which are the same for all controllers,
+are added outside them.
 
 #### done.
 **That's it**. You can now render `React` on the server-side having a clean,
@@ -146,8 +146,8 @@ the question: **Why node?**
 
 1. Embedding execution of one language in another 
 introduces tight coupling which is a stopper for scalability. 
-In fact, in relation to react rendering,  
-even applications written in node [are faced with](https://github.com/erikras/react-redux-universal-hot-example/issues/368)
+In fact, in relation to react rendering, even applications written
+in node [are faced with](https://github.com/erikras/react-redux-universal-hot-example/issues/368)
 [bottlenecks](https://github.com/facebook/react/issues/1739) 
 when doing it.
 2. Nodejs is the defacto standard for running JavasScript on the server - the npm ecosystem,
